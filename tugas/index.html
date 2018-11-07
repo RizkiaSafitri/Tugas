@@ -5,6 +5,7 @@
 <title>Rizkia Safitri Tugas 1</title>
 <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../bootstrap/css/custom.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -45,17 +46,27 @@
     </table>
 </div>
 <div id="form"> 
-    <form>
+    <form id="formInput">
         <h2>Form</h2>
-        <label>NPM</label>
-        <input type="text" name="NPM" placeholder="NPM Anda">
-        <label>Nama</label>
-        <input type="text" name="Nama" placeholder="Nama Anda">
-        <label>Tanggal Lahir</label>
-        <input type="text" name="Tgl_lhr" placeholder="Tanggal Lahir Anda ">
+        <div>
+                <label>NPM</label>
+                <input type="text" name="NPM" id="textNPM" placeholder="NPM Anda">
+                <span class="form_error" id="pesan_error_npm"></span>
+        </div>
+        <div>
+                <label>Nama</label>
+                <input type="text" name="Nama" id="textName" placeholder="Nama Anda">
+                <span class="form_error" id="pesan_error_nama"></span>
+        </div>
+        <div>
+                <label>Tanggal Lahir</label>
+                <input type="text" name="Tgl_lhr" id="textTgl" placeholder="Tanggal Lahir Anda ">
+                <span class="form_error" id="pesan_error_tglLahir"></span>
+        </div>
         <input type="submit" value="Submit"></td>
     </form>
 </div>
 </center>
+<script src="js/query.js"></script>
 </body>
 </html>
